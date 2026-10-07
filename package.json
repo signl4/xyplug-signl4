@@ -1,0 +1,20 @@
+{
+  "name": "xyplug-signl4",
+  "version": "1.0.0",
+  "description": "SIGNL4 mobile alerting action plugin for xyOps",
+  "type": "module",
+  "bin": {
+    "xyplug-signl4": "./index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "xyops",
+    "signl4",
+    "alerting",
+    "incident-response",
+    "on-call"
+  ],
+  "license": "MIT"
+}

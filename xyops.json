@@ -1,0 +1,50 @@
+{
+  "title": "SIGNL4",
+  "type": "action",
+  "command": "npx -y github:signl4/xyplug-signl4#v1.0.0",
+  "description": "Send xyOps job and alert events to SIGNL4 for reliable mobile alerting, on-call routing and escalation.",
+  "params": [
+    {
+      "id": "title",
+      "title": "Alert Title",
+      "type": "text",
+      "required": false,
+      "description": "Optional custom alert title. If empty, xyOps event/job data is used."
+    },
+    {
+      "id": "message",
+      "title": "Alert Message",
+      "type": "text",
+      "required": false,
+      "description": "Optional custom message. If empty, xyOps event/job data is used."
+    },
+    {
+      "id": "service",
+      "title": "SIGNL4 Service",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "location",
+      "title": "Location",
+      "type": "text",
+      "required": false,
+      "description": "Optional SIGNL4 location, for example 52.52,13.405."
+    },
+    {
+      "id": "resolveOnClear",
+      "title": "Resolve on clear/success",
+      "type": "checkbox",
+      "required": false,
+      "default": true
+    }
+  ],
+  "secrets": [
+    {
+      "id": "SIGNL4_TEAM_SECRET",
+      "title": "SIGNL4 Team Secret",
+      "description": "The team/integration secret from your SIGNL4 webhook URL.",
+      "required": true
+    }
+  ]
+}
